@@ -1,0 +1,28 @@
+<div id="wrap">
+  <p>move the cursor around the screen</p>
+</div>
+
+
+
+
+
+style----------
+
+.ball {
+  pointer-events: none;
+  position: absolute; 
+  width: 10px;
+  height: 10px;
+  border-radius: 50%; 
+  
+  animation: implode 10s ease-in-out;
+  animation-fill-mode: both;
+  opacity: .5;
+}
+
+@keyframes implode {
+  0% {transform: scale(0)}
+  25% {transform: scale(1)}
+  100% {transform: scale(0)}
+}
+
